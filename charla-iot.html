@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo: IoT Control de LED</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">OPEN DAY FIIS - UNAS</a>
+            <a href="index.html#charlas" class="btn btn-sm btn-volver">Volver a Demos</a>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        
+        <header class="ficha-header text-center mb-5 p-4 rounded">
+            <h1 class="display-4 fw-bold text-light">¿Qué es IoT? Control de LED vía Web</h1>
+            <p class="lead fs-3" style="color: var(--color-acento);">
+                Por: <strong>Paul Tijero</strong> (Grupo: IoT)
+            </p>
+        </header>
+
+        <div class="row g-5">
+            
+            <div class="col-lg-4">
+                <img src="images/ponente-paul.jpg" alt="Foto de Paul Tijero" class="img-fluid speaker-img mb-4 d-block mx-auto">
+                
+                <div class="card p-3" style="background-color: var(--color-secundario-fondo);">
+                    <h4 class="text-light">Detalles del Evento</h4>
+                    <ul class="list-unstyled ficha-info">
+                        <li><strong><i class="fas fa-clock"></i> Duración:</strong> Demo de 5 minutos</li>
+                        <li><strong><i class="fas fa-users"></i> Grupo:</strong> Internet de las Cosas (IoT)</li>
+                        <li><strong><i class="fas fa-bullseye"></i> Objetivo:</strong> Explicar qué es IoT y demostrar un ejemplo real de un dispositivo controlado a distancia.</li>
+                        <li><strong><i class="fas fa-desktop"></i> Material:</strong> Demo en vivo (Hardware y Página Web).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                
+                <section id="que-es">
+                    <h2 class="section-title">¿Qué es IoT (Internet de las Cosas)?</h2>
+                    <p class="ficha-info">
+                        El <strong>Internet de las Cosas (IoT)</strong> se refiere a la red de objetos físicos ("cosas") que están equipados con sensores, software y otras tecnologías con el fin de conectarse e intercambiar datos con otros dispositivos y sistemas a través de Internet.
+                    </p>
+                    <p class="ficha-info">
+                        En palabras simples: <strong>es darle el poder de Internet a objetos cotidianos.</strong> Ejemplos comunes incluyen focos inteligentes que controlas con tu voz, relojes (smartwatches) que miden tu pulso, y refrigeradores que te avisan si dejas la puerta abierta.
+                    </p>
+                </section>
+
+                <section id="componentes" class="mt-4">
+                    <h2 class="section-title">Componentes de un Proyecto IoT</h2>
+                    <p class="ficha-info">Todo proyecto de IoT, incluyendo la demo, tiene 3 partes clave:</p>
+                    
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent ficha-info"><strong>1. Hardware (Las "Cosas"):</strong>
+                            <ul class="ficha-info">
+                                <li><strong>Microcontrolador:</strong> El "cerebro" (Ej. ESP32, Arduino).</li>
+                                <li><strong>Actuador:</strong> El "músculo" que realiza una acción. En nuestra demo, será el <strong>LED</strong>.</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item bg-transparent ficha-info"><strong>2. Conectividad:</strong> El "puente" que lleva los datos. En nuestra demo, usaremos <strong>WiFi</strong>.</li>
+                        <li class="list-group-item bg-transparent ficha-info"><strong>3. Plataforma (Software):</strong> La "interfaz" donde el usuario da la orden. En nuestra demo, será una <strong>página web</strong>.</li>
+                    </ul>
+                </section>
+
+                <section id="herramientas-demo" class="mt-4">
+                    <h2 class="section-title">Herramientas de esta Demo</h2>
+                    <ul class_type="circle" class="ficha-info">
+                        <li><strong>Hardware:</strong> Un microcontrolador <strong>ESP32</strong> (una placa pequeña con WiFi incorporado) conectado a un <strong>LED</strong>.</li>
+                        <li><strong>Software (Firmware):</strong> Un pequeño programa en C++ (usando el entorno de Arduino) cargado en el ESP32, que le dice "conéctate a esta red WiFi y espera órdenes".</li>
+                        <li><strong>Software (Interfaz):</strong> Una página web simple (HTML y JavaScript) que tiene un botón de "Encender" y "Apagar".</li>
+                    </ul>
+                </section>
+
+                <section id="la-demo" class="mt-4">
+                    <h2 class="section-title">Lo que verás en la Demo de 5 Minutos</h2>
+                    <p class="ficha-info">Esta es la parte más emocionante. Paul demostrará la "magia" del IoT:</p>
+                    <ol class="ficha-info">
+                        <li>Mostrará el circuito físico (la placa ESP32 y el LED).</li>
+                        <li>Abrirá una página web en su teléfono o laptop.</li>
+                        <li>Al presionar el botón "Encender" en la página web...</li>
+                        <li>¡Verás cómo el LED físico en la mesa se enciende al instante, recibiendo la orden a través de Internet!</li>
+                    </ol>
+                    <p class="ficha-info">Esto prueba cómo el mundo digital (una web) puede controlar el mundo físico (un LED).</p>
+                </section>
+                
+                <section id="bio-ponente" class="mt-5">
+                    <h2 class="section-title">Sobre el Ponente</h2>
+                    <p class="ficha-info">
+                        Paul Tijero es un estudiante e investigador del grupo de IoT en la FIIS-UNAS, especializado en la integración de hardware y software para crear soluciones conectadas e inteligentes.
+                    </beta-text>
+                </section>
+
+                <div class="text-center mt-5">
+                    <a href="index.html#charlas" class="btn btn-lg btn-volver px-5">
+                        Volver a Todas las Demos
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-final text-white text-center mt-5">
+        <p class="mb-0">© 2025 Facultad de Ingeniería en Informatica y Sistemas (FIIS) - UNAS</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+</body>
+</html>

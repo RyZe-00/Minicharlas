@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo: Red LAN Doméstica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">OPEN DAY FIIS - UNAS</a>
+            <a href="index.html#charlas" class="btn btn-sm btn-volver">Volver a Demos</a>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        
+        <header class="ficha-header text-center mb-5 p-4 rounded">
+            <h1 class="display-4 fw-bold text-light">Demostración de una Red LAN Doméstica</h1>
+            <p class="lead fs-3" style="color: var(--color-acento);">
+                Por: <strong>Jean Hurtado</strong> (Grupo: Tecnologías de Información)
+            </p>
+        </header>
+
+        <div class="row g-5">
+            
+            <div class="col-lg-4">
+                <img src="images/ponente-jean.jpg" alt="Foto de Jean Hurtado" class="img-fluid speaker-img mb-4 d-block mx-auto">
+                
+                <div class="card p-3" style="background-color: var(--color-secundario-fondo);">
+                    <h4 class="text-light">Detalles del Evento</h4>
+                    <ul class="list-unstyled ficha-info">
+                        <li><strong><i class="fas fa-clock"></i> Duración:</strong> Demo de 5 minutos</li>
+                        <li><strong><i class="fas fa-users"></i> Grupo:</strong> Tecnologías de Información (TI)</li>
+                        <li><strong><i class="fas fa-bullseye"></i> Objetivo:</strong> Desmitificar la conectividad de tu hogar y entender cómo funcionan las redes que usamos a diario.</li>
+                        <li><strong><i class="fas fa-desktop"></i> Material:</strong> Explicación técnica y demostración en vivo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                
+                <section id="que-es">
+                    <h2 class="section-title">¿Qué es una Red LAN?</h2>
+                    <p class="ficha-info">
+                        Una **Red de Área Local (LAN)**, por sus siglas en inglés (Local Area Network), es una red de computadoras y dispositivos que se limita a un área geográfica pequeña y específica, como tu casa, una oficina o un edificio de la universidad.
+                    </p>
+                    <p class="ficha-info">
+                        Su propósito principal es permitir que los dispositivos conectados (como tu PC, laptop, smartphone, impresora o Smart TV) compartan recursos e información entre sí y, por lo general, compartan una única conexión a Internet.
+                    </p>
+                </section>
+
+                <section id="componentes" class="mt-4">
+                    <h2 class="section-title">Componentes Clave en tu Hogar</h2>
+                    <p class="ficha-info">En una red doméstica típica, encontrarás estas "herramientas" de hardware:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent ficha-info"><strong>Modem:</strong> El "traductor". Convierte la señal de tu proveedor de Internet (ISP) en una señal que tu red puede usar.</li>
+                        <li class="list-group-item bg-transparent ficha-info"><strong>Router:</strong> El "cerebro". Dirige el tráfico entre todos tus dispositivos y hacia Internet. El WiFi de tu casa proviene del router.</li>
+                        <li class="list-group-item bg-transparent ficha-info"><strong>Cable Ethernet (UTP):</strong> El medio físico para la conexión por cable. Ofrece la conexión más rápida y estable.</li>
+                        <li class="list-group-item bg-transparent ficha-info"><strong>Puntos de Acceso (AP):</strong> Se usan en casas grandes para extender la cobertura de la señal WiFi.</li>
+                    </ul>
+                </section>
+
+                <section id="herramientas-sw" class="mt-4">
+                    <h2 class="section-title">Herramientas (Software) de Diagnóstico</h2>
+                    <p class="ficha-info">Para entender y diagnosticar una red, los profesionales de TI usan comandos simples pero poderosos:</p>
+                    <ul class_type="circle" class="ficha-info">
+                        <li><strong>Comando `ipconfig` (Windows) / `ifconfig` (Linux/Mac):</strong> Te permite ver tu propia dirección IP, la "matrícula" de tu dispositivo en la red.</li>
+                        <li><strong>Comando `ping`:</strong> Envía un pequeño paquete de datos a otro dispositivo (ej. `ping 8.8.8.8`) para verificar si hay conexión y medir el tiempo de respuesta.</li>
+                        <li><strong>Comando `tracert` / `traceroute`:</strong> Muestra la ruta completa (todos los "saltos") que toman tus datos para llegar a un destino en Internet.</li>
+                    </ul>
+                </section>
+
+                <section id="la-demo" class="mt-4">
+                    <h2 class="section-title">Lo que verás en la Demo de 5 Minutos</h2>
+                    <p class="ficha-info">Jean no solo hablará de esto, ¡lo mostrará en vivo! En 5 minutos, verás:</p>
+                    <ol class="ficha-info">
+                        <li>Cómo identificar la dirección IP de tu propia PC.</li>
+                        <li>Usar el comando `ping` para verificar la conectividad con el router y con Internet (Google).</li>
+                        <li>Una explicación visual del flujo de datos: desde tu celular, pasando por el router, hasta llegar a una página web.</li>
+                    </ol>
+                </section>
+                
+                <section id="bio-ponente" class="mt-5">
+                    <h2 class="section-title">Sobre el Ponente</h2>
+                    <p class="ficha-info">
+                        Jean Hurtado es un destacado estudiante y miembro activo del Grupo de Investigación en Tecnologías de Información de la FIIS-UNAS, enfocado en la implementación de soluciones de conectividad y redes.
+                    </p>
+                </section>
+
+                <div class="text-center mt-5">
+                    <a href="index.html#charlas" class="btn btn-lg btn-volver px-5">
+                        Volver a Todas las Demos
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-final text-white text-center mt-5">
+        <p class="mb-0">© 2025 Facultad de Ingeniería en Informatica y Sistemas (FIIS) - UNAS</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+</body>
+</html>

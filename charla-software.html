@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo: Calculadora en PSEINT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">OPEN DAY FIIS - UNAS</a>
+            <a href="index.html#charlas" class="btn btn-sm btn-volver">Volver a Demos</a>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        
+        <header class="ficha-header text-center mb-5 p-4 rounded">
+            <h1 class="display-4 fw-bold text-light">Programar una Calculadora en PSEINT</h1>
+            <p class="lead fs-3" style="color: var(--color-acento);">
+                Por: <strong>Aldana</strong> (Grupo: Ingeniería de Software)
+            </p>
+        </header>
+
+        <div class="row g-5">
+            
+            <div class="col-lg-4">
+                <img src="images/ponente-aldana.jpg" alt="Foto de Aldana" class="img-fluid speaker-img mb-4 d-block mx-auto">
+                
+                <div class="card p-3" style="background-color: var(--color-secundario-fondo);">
+                    <h4 class="text-light">Detalles del Evento</h4>
+                    <ul class="list-unstyled ficha-info">
+                        <li><strong><i class="fas fa-clock"></i> Duración:</strong> Demo de 5 minutos</li>
+                        <li><strong><i class="fas fa-users"></i> Grupo:</strong> Ingeniería de Software</li>
+                        <li><strong><i class="fas fa-bullseye"></i> Objetivo:</strong> Demostrar los fundamentos de la lógica de programación usando una herramienta práctica y en español.</li>
+                        <li><strong><i class="fas fa-desktop"></i> Material:</strong> Demo en vivo con PSEINT.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                
+                <section id="que-es">
+                    <h2 class="section-title">¿Qué es PSEINT?</h2>
+                    <p class="ficha-info">
+                        <strong>PSEINT</strong> es una herramienta educativa diseñada para ayudar a los estudiantes a dar sus primeros pasos en el mundo de la programación. Su nombre viene de "Pseudo-Intérprete".
+                    </p>
+                    <p class="ficha-info">
+                        En lugar de forzarte a aprender la sintaxis compleja de un lenguaje como Java o C++, PSEINT te permite escribir <strong>pseudocódigo</strong> (un lenguaje falso, simple y en español) para que te concentres en lo más importante: <strong>la lógica.</strong>
+                    </p>
+                </section>
+
+                <section id="conceptos" class="mt-4">
+                    <h2 class="section-title">Conceptos Clave de Programación</h2>
+                    <p class="ficha-info">La demo tocará estos pilares fundamentales:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent ficha-info"><strong>Algoritmo:</strong> La serie de pasos ordenados y finitos para resolver un problema. (Ej. "Pedir número 1", "Pedir número 2", "Sumarlos", "Mostrar resultado").</li>
+                        <li class="list-group-item bg-transparent ficha-info"><strong>Variables:</strong> "Cajas" en la memoria que guardan datos. En la demo, usaremos variables como `numero1`, `numero2` y `resultado`.</li>
+                        <li class="list-group-item bg-transparent ficha-info"><strong>Operadores:</strong> Símbolos que ejecutan operaciones. Usaremos los aritméticos básicos: `+`, `-`, `*`, `/`.</li>
+                    </ul>
+                </section>
+
+                <section id="herramientas-sw" class="mt-4">
+                    <h2 class="section-title">Comandos Clave en PSEINT</h2>
+                    <p class="ficha-info">Verás estos comandos en acción. Al estar en español, son muy fáciles de entender:</p>
+                    
+                    <ul class_type="circle" class="ficha-info">
+                        <li><strong>Definir:</strong> Para crear nuestras "cajas" (variables). Ej: `Definir numero1 Como Entero;`</li>
+                        <li><strong>Escribir:</strong> Para mostrar un mensaje en la pantalla. Ej: `Escribir "Introduce el primer número:"`</li>
+                        <li><strong>Leer:</strong> Para capturar lo que el usuario escribe y guardarlo en una variable. Ej: `Leer numero1;`</li>
+                        <li><strong>Asignación (`<-`):</strong> Para guardar el resultado de una operación. Ej: `resultado <- numero1 + numero2;`</li>
+                    </ul>
+                </section>
+
+                <section id="la-demo" class="mt-4">
+                    <h2 class="section-title">Lo que verás en la Demo de 5 Minutos</h2>
+                    <p class="ficha-info">Aldana demostrará en vivo cómo el grupo de Ingeniería de Software aplica estos conceptos:</p>
+                    <ol class="ficha-info">
+                        <li>Escribirá el pseudocódigo para una calculadora básica desde cero.</li>
+                        <li>Definirá las variables para los números y el resultado.</li>
+                        <li>Usará `Leer` y `Escribir` para interactuar con el usuario.</li>
+                        <li>Ejecutará el programa y verás cómo la lógica cobra vida.</li>
+                    </ol>
+                </section>
+                
+                <section id="bio-ponente" class="mt-5">
+                    <h2 class="section-title">Sobre la Ponente</h2>
+                    <p class="ficha-info">
+                        Aldana es una estudiante entusiasta del curso de Ingeniería de Software, con un fuerte interés en las metodologías de desarrollo y la enseñanza de la programación.
+                    </p>
+                </section>
+
+                <div class="text-center mt-5">
+                    <a href="index.html#charlas" class="btn btn-lg btn-volver px-5">
+                        Volver a Todas las Demos
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-final text-white text-center mt-5">
+        <p class="mb-0">© 2025 Facultad de Ingeniería en Informatica y Sistemas (FIIS) - UNAS</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+</body>
+</html>
